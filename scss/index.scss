@@ -1,4 +1,26 @@
+@import "val";
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
 body {
 	padding: 0;
-	
+}
+
+#container {
+	color: $color-red;
+
+	&.sadas {
+		padding: 5px;
+	}
+
+	.sasd {
+		margin: 5px;
+	}
+
+	@include border-radius(10px);
 }
